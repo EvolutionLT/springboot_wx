@@ -24,7 +24,7 @@ public class TextMessageUtil {
             MessageText text = new MessageText();
             text.setToUserName(FromUserName);
             text.setFromUserName(ToUserName);
-            text.setContent("欢迎关注沙漠森林ye~");
+            text.setContent(FromUserName+"欢迎关注沙漠森林ye~");
             text.setCreateTime(new Date().getTime());
             text.setMsgType("text");
             return  messageToxml(text);

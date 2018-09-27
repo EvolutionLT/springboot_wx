@@ -38,7 +38,7 @@ public class LoginController {
       }
 
 
-      @RequestMapping(value = "wxdemo",method=RequestMethod.POST)
+      @RequestMapping(value = "wx",method=RequestMethod.POST)
       public void dopost(HttpServletRequest request,HttpServletResponse response){
             response.setCharacterEncoding("utf-8");
             PrintWriter out = null;
@@ -48,7 +48,7 @@ public class LoginController {
             String FromUserName = map.get("FromUserName");
             String MsgType = map.get("MsgType");
             String Content = map.get("Content");
-
+          System.out.println("2222222");
             String message = null;
             //处理文本类型，实现输入1，回复相应的封装的内容
             if("text".equals(MsgType)){
